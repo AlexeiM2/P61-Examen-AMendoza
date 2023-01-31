@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>recursos/lovepik-rubber-ball-png-image_401055927_wh1200.png</file>
+        <file>recursos/pngwing.com.png</file>
+        <file>recursos/pngegg.png</file>
+    </qresource>
+</RCC>

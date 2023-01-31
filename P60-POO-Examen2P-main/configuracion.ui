@@ -19,6 +19,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(150, 190, 202);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="groupBox">
@@ -63,14 +66,17 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QSlider" name="inDimension">
+        <property name="minimum">
+         <number>50</number>
+        </property>
         <property name="maximum">
-         <number>25</number>
+         <number>200</number>
         </property>
         <property name="pageStep">
-         <number>5</number>
+         <number>10</number>
         </property>
         <property name="value">
-         <number>5</number>
+         <number>200</number>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>

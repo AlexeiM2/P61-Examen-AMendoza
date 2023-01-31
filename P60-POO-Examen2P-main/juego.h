@@ -23,8 +23,6 @@ class Juego : public QMainWindow
 public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
-protected:
-    virtual void paintEvent(QPaintEvent *event);
 
 private slots:
     void on_btnArriba_released();
@@ -39,13 +37,19 @@ private slots:
 
     void on_actionSalir_triggered();
 
-    void on_marco_customContextMenuRequested(const QPoint &pos);
-
     void dibujar();
+
+    void on_btnIniciar_clicked();
+
+protected:
+    virtual void paintEvent(QPaintEvent *event); //Verifica el area a dsicposicion o sencillamente no actua
 
 private:
     Ui::Juego *ui;
     Circulo *m_circulo;
+    QColor m_color;
+    QColor m_color2;
+    int m_ancho;
     QImage *miImagen;
     QPainter *mPainter;
 };

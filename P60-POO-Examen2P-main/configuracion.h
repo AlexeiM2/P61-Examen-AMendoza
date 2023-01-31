@@ -17,18 +17,20 @@ public:
     ~Configuracion();
 
     const QColor &color() const;
-    int dimension() const;
+    int ancho() const;
 
     void setColor(const QColor &newColor);
-    void setDimension(int newDimension);
+    void setAncho(int newAncho);
 
 private slots:
     void on_btnColor_released();
 
+    void on_inDimension_valueChanged(int value);
+
 private:
     Ui::Configuracion *ui;
     QColor m_color;
-    int m_dimension;
+    int m_ancho;
 
     void setWidgetColor();
 };

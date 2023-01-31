@@ -3,9 +3,9 @@
 Circulo::Circulo()
 
 {
-setX(20);
-setY(50);
-setDimension(100);
+    this->setX(149);
+    this->setY(140);
+    this->setDimension(200);
 }
 
 Circulo::Circulo(int xpos, int ypos, int dim)
